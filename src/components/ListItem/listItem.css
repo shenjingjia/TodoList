@@ -1,0 +1,36 @@
+.item {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #cecece;
+    padding: 10px;
+}
+
+.item div {
+    display: inline;
+}
+
+.item .isComplete {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #cecece;
+}
+
+.item .isComplete.complete {
+    position: relative;
+}
+
+.item .isComplete.complete::after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
